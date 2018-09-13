@@ -22,6 +22,12 @@ class ClickityClick extends React.Component {
     country: null
   })
 }
+handleClick = () => {
+  this.setState({
+    hasBeenClicked: true
+  })
+  console.log(this.state.hasBeenClicked); // prints false
+}
  
  const house = {
   kitchen: {
