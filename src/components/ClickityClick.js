@@ -23,6 +23,23 @@ class ClickityClick extends React.Component {
   })
 }
  
+ const house = {
+  kitchen: {
+    cabinets: 'white',
+    table: {
+      legs: 4
+    }
+  }
+};
+ 
+// Note: `deepMerge()` isn't actually a built-in function
+const updatedHouse = deepMerge(house, {
+  kitchen: {
+    table: {
+      legs: 8
+    }
+  }
+});
   render() {
     return (
       <div>
