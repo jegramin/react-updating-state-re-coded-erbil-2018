@@ -14,6 +14,12 @@ class ClickityClick extends React.Component {
   this.setState({
     hasBeenClicked: true,
   currentTheme: 'blue',
+  theme: 'blue',
+  addressInfo: {
+    street: null,
+    number: null,
+    city: null,
+    country: null
   })
 }
  
